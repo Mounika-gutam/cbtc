@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href='/style.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="bg-container">
+    <h1 class="title">EventLitez</h1>
+    <hr class="line-bar" />
+    <h2 class="form-title">Create New Event</h2>
+    <form class="form-container" id="eventForm">
+      <input id="eventName" class="input-field" type="text" placeholder="Event Name..." required/>
+      <input id="eventDate" class="input-field" type="date" required/>
+      <input id="eventTime" class="input-field" type="time" required/>
+      <input id="eventLocation" class="input-field" type="text" placeholder="Location" required/>
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+
+    <div>
+      <h1 class="event-heading">Upcoming Events</h1>
+      <ul id="eventList" class="event-list"></ul>
+    </div>
+  </div>
+  <script defer type="text/javascript" src="/main.js">
+    console.log("JavaScript is working!");
+  </script>
+</body>
+</html>
